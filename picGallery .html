@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Photo gallery </title>
+    <style>
+        body{
+            text-align: center;
+            box-sizing: border-box;
+            font-family: cursive;
+            font-size: 35px;
+            background-color: rgba(49, 49, 49, 0.452);
+        }
+        .container{
+            border: 1px solid;
+            border-radius: 40px;
+            width: max-content;
+            margin: 30px auto;
+            padding: 42px;
+            box-shadow: 0px 0px 18px .2px rgba(0, 0, 0, 0.562);
+        }
+        .img{
+            margin-top: 30px;
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+        }
+        button{
+            padding: 3px 7px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3> Showing Pics.. </h3>
+        <div class="buttons">
+            <button id="previous" onclick="previous()"> Previous </button>
+            <button id="slideShow" onclick="slideShow()"> Slide Show </button>
+            <button id="stop" onclick="stop()"> Stop </button>
+            <button id="next" onclick="next()"> Next </button>
+        </div>
+        <img src="images/images.jpg" alt="6 photos will appear here.." class="img" >
+    </div>
+    <script src="PicGallery .js"></script>
+</body>  
+</html>
